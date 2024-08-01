@@ -1,0 +1,30 @@
+== YouTube Channel Checker
+=== Description
+This project is a youtube checker that uses selenium firefox webdriver to scrap information about latest videos of given YouTube channels. It also provides CLI interface that can be adjusted by changing .env file
+
+=== Usage
+Firstly, make a virtual environment and install requirements:
+
+[source, sh]
+----
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+----
+
+Then add channels that you would want to scrape to .env file, for example:
+
+[souce, sh]
+----
+CHANNEL_NAMES="
+@YouTube
+@numberphile
+"
+----
+
+Finally, you can run the script:
+
+[source, sh]
+----
+python main.py
+----
